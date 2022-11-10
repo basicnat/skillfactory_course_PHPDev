@@ -12,4 +12,4 @@
 
 ## Как открыть
 
-Просмореть сайт можно [на GitHub Pages](https://basicnat.github.io/skillfactory_course_PHPDev/)
+Просмореть сайт можно [на GitHub Pages](https://basicnat.github.io/news-site/) 
