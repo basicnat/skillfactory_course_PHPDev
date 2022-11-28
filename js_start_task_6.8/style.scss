@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  padding: 20vh;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: black;  
+}
+
+.nav {
+  margin-top: 60px;
+  display: block;
+  font-size: .7em;
+}
+
+ul {
+  list-style: circle;
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+#consoleLog, #alert, #prompt {
+  cursor: pointer;
+  margin-bottom: 30px;   
+  
+  code {
+    color: darkgray;
+  }
+  p {
+    margin: 0;
+  }
+  
+}
+
+#trafficLight {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+.trafficLight {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: black;
+
+  cursor: pointer;
+
+ 
+}
+
+.form-wrapper {
+  display: flex;
+  
+  
+
+  fieldset {
+    width: 50%;
+    
+    label {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+    
+  }
+
+  form {
+    input {
+      display: block;
+      font-size: 1em;
+      font-family: inherit;
+      margin: 10px 0;
+    }
+    
+  }
+}
+
+button {
+  
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: darkslateblue;
+  color: white;
+  font-family: inherit;
+  font-size: .7em;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: rgb(97, 84, 186) ;
+}
+
