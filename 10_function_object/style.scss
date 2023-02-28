@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+}
+.container {
+    margin: 15px auto;
+    border: solid 1px #000;
+    border-radius: 20px;
+    padding: 20px;
+    width: max-content;
+}
+
+.card-header {
+    margin: 10vh 10vh 0 10vh;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.card-title {
+    span {
+        font-weight: 400;
+    }
+}
+
+.container-button {
+    margin: 15px auto;
+    padding: 20px;
+    width: max-content;
+
+    :first-child {
+        background-color: crimson;
+        color: white;
+    }
+}
+
+button {
+    height: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}

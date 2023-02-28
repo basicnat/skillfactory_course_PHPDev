@@ -53,6 +53,8 @@ const personGenerator = {
     }`,
 
     
+
+    
     
 
     GENDER_MALE: 'Мужчина',
@@ -66,38 +68,33 @@ const personGenerator = {
         return obj.list[prop];
     }, 
     
-    randomGender: function () {
-           
+    randomGender: function () {           
         let i = Math.round(Math.random());
-        console.log(i);
-        if(i == 1) {            
+    
+        if(i == 0) {            
             this.person.gender = this.GENDER_MALE
         } else {
             this.person.gender = this.GENDER_FEMALE
         }
         return this.person.gender
-
     },
-
     
-    randomFirstName: function() {
-            
-           if(this.person.gender == this.GENDER_FEMALE) {                        
+    
+
+    randomFirstName: function() {            
+           if(this.person.gender === 'Женщина') {                        
                return this.randomValue(this.firstNameFemaleJson);
             } else {
             return this.randomValue(this.firstNameMaleJson);
-        }       
-
+        }
     },
 
-
     randomSurName: function() {
-            if(this.person.gender == this.GENDER_FEMALE) {
+            if(this.person.gender === 'Женщина') {
                 return this.randomValue(this.surnameJson) + "a";
             } else {
             return this.randomValue(this.surnameJson);
-        }      
-
+        }
     },
 
 
@@ -108,13 +105,22 @@ const personGenerator = {
         return year + ' года рождения'
     },
 
+    randomOccupation: function() {
+        if(this.person.gender === 'Женщина') {
+            return this.randomValue(this.occupationJson)
+        } else {
+
+            return this.randomValue(this.occupationJson)
+        }
+    },
 
     getPerson: function () {
         this.person = {};
+        this.person.gender = this.randomGender();
         this.person.firstName = this.randomFirstName();
         this.person.surName = this.randomSurName();
-        this.person.gender = this.randomGender();
         this.person.birthYear = this.randomBirthYear();
+        
         return this.person;
     }
 };
